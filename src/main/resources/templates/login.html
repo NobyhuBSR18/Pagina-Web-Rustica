@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head th:insert="~{layout::head}">
+    <meta charset="UTF-8">
+</head>
+<body class="bg-dark">
+
+<link rel="stylesheet" th:href="@{css/login/login.css}">
+
+<div id="login">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" th:action="@{/login}" method="POST" th:object="${user}">
+                        <h3 class="text-center">Login</h3>
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label><br>
+                            <input type="text" th:field="*{usuario}" id="correo" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña:</label><br>
+                            <input type="password" th:field="*{contrasena}" id="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <input type="submit" class="btn btn-success btn-md space" value="Ingresar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

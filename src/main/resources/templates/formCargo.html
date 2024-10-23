@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{layout::head}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<nav th:insert="~{layout::nav-crud}"></nav>
+
+<br>
+
+<div class="col-sm-6">
+
+    <form th:action="@{/cargo/guardar}" method="post" th:object="${cargo}">
+        <div class="card">
+            <div class="card-header">
+                <h3>Datos del Cargo</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="text" th:field="*{idcargo}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" th:field="*{nomcar}" class="form-control" required>
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="Guardar" class="btn btn-success">
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

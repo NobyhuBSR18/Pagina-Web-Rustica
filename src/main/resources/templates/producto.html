@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head th:insert="~{layout::head}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<nav th:insert="~{layout::nav-crud}"></nav>
+
+<br>
+
+<h2>Listado de productos</h2>
+
+<div class="container-sm-6">
+
+    <a th:href="@{/producto/nuevo}" class="btn btn-success">Registar</a>
+
+    <table class="table">
+
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each=" p : ${productos}">
+            <th scope="row" th:text="${p.idproducto}"></th>
+            <td th:text="${p.codigopro}"></td>
+            <td th:text="${p.nompro}"></td>
+            <td th:text="${p.precpro}"></td>
+            <td th:text="${p.canpro}"></td>
+            <td><img th:src="${p.urlpro}" width="250px" height="250px"></td>
+            <td th:text="${p.categoria.nomcat}"></td>
+            <td>
+                <a class="btn btn-danger" th:href="@{/producto/borra/}+${p.idproducto}">Borrar</a>
+            </td>
+            <td>
+                <a class="btn btn-success" th:href="@{/producto/editar/}+${p.idproducto}">Editar</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
+</body>
+</html>

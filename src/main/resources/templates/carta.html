@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CarpiShop</title>
+        <link rel="stylesheet" th:href="@{/css/carta/cartaStyle.css}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <section class="main-header">
+            <div class="header-wrap">
+                <div class="wrap-logo-header">
+                    <a href="" class="logo-header">
+                        <span>RÚSTICA</span>
+                    </a>
+                </div>
+                <div class="wrap-nav-header">
+                    <nav class="nav-header">
+                        <ul class="main-menu">
+                            <button class="btn-Carro">Carro 
+                                <i class="fa fa-cart-plus" id="carro-icon"></i>
+                            </button>
+                            <div class="carro-count">0</div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Seccion de la Carta -->
+            <div class="carro">
+                <div class="carro-title">Platillos</div>
+                <div class="carro-contenido">
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-precio">S/0</div>
+                </div>
+                <div class="total">
+                    <div>Nombre Completo</div>
+                    <div><input type="text" id="nomapecli"></div>
+                </div>
+                <div class="total">
+                    <div>DNI</div>
+                    <div><input type="number" id="dnicli"></div>
+                </div>
+                <button class="btn-comprar">Realizar Pedido</button>
+                <i class="fa fa-close" id="carro-close"></i>
+            </div>
+        </section>
+
+        <section class="Comida">
+            <h1 >NUESTRA CARTA</h1>
+            <div class="Contenido">
+
+                <div class="Seccion-comida" th:each="p : ${productos}">
+
+                    <p class="comida-idpro" hidden="true" th:text="${p.idproducto}"></p>
+                    <img th:src="${p.urlpro}" class="img-comida">
+                    <h2 class="comida-titulo" th:text="${p.nompro}"></h2>
+                    <h3 class="comida-precio" th:text="${p.precpro}"></h3>
+                    <button class="add-Carro">
+                        Añadir al Carro
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <script th:src="@{/js/carta/crit.js}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head th:insert="~{layout::head}">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<nav th:insert="~{layout::nav-crud}"></nav>
+
+<br>
+
+<h2>Listado de personas</h2>
+
+<div class="container-sm-6">
+
+    <a th:href="@{/usuario/nuevo}" class="btn btn-success">Registar</a>
+
+    <table class="table">
+
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each=" u : ${usuarios}">
+            <th scope="row" th:text="${u.idusuario}"></th>
+            <td th:text="${u.usuario}"></td>
+            <td th:text="${u.persona.nomper} + ' ' + ${u.persona.apeper}"></td>
+            <td>
+                <a class="btn btn-danger" th:href="@{/usuario/borra/}+${u.idusuario}">Borrar</a>
+            </td>
+            <td>
+                <a class="btn btn-success" th:href="@{/usuario/editar/}+${u.idusuario}">Editar</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
+</body>
+</html>

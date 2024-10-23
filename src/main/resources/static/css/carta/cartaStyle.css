@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.Comida{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Al.Ca/Fondo\ de\ NC.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background: rgba(12,11,9,0.6);
+    height: 250px;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    text-transform: uppercase;
+    padding: 70px;
+    font-size: 40px;
+    
+}
+.PIZZAS{
+    color: #fff;
+    width: 1500px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.PASTAS{
+    color: #fff;
+    width: 1500px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.PARRILLA{
+    color: #fff;
+    width: 1500px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.pollos{
+    color: #fff;
+    width: 1500px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.Bebidas{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.ALCOHOL{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.FRESH{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.Pisco{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.RON{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.TEQUILA{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.GIN{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.VODKA{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.WHISKYS{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.ENTO{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.CACHACA{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.Virgen{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.Margarita{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.Cerveza{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.Juerguera{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.PIQUEOS{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.RED-BULL{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.VINOS{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.BOTELLAS{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+.PROMOCIONES{
+    color: #fff;
+    width: 2000px;
+    text-align: center;
+    font-size: 30px;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+}
+header nav ul li a:hover{
+    color: #CDA45E;
+}
+header nav ul li a i{
+    margin-left: 10px;
+}
+/* Estilo del carrito */
+.btn-Carro{
+    padding: 5px 30px;
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    color: #CDA45E;
+    background-color: transparent;
+    border: 2px solid #CDA45E;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+.btn-Carro:hover{
+    background-color: #CDA45E;
+    color: #292929;
+}
+.btn-Carro i{
+    margin-left: 10px;
+}
+.carro-count{
+    position: absolute;
+    background-color: #CDA45E;
+    color: #292929;
+    text-align: center;
+    top: 5px;
+    right: 65px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight: 600;
+    z-index: 10;
+}
+/* Seccion Carrito */
+.carro{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(12,11,9,1);
+    color: #CDA45E;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    padding: 20px;
+    z-index: 100;
+}
+.carro-active{
+    right: 0;
+    transition: 0.4s ease;
+}
+.carro-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cda45e7a;
+}
+.carro-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cda45e7a;    
+}
+.carro-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    background-color: #292929;
+    padding: 5px;
+}
+.detalle-box{
+    display: grid;
+    row-gap: 15px;
+}
+.precio-box{
+    display: flex;
+    justify-content: space-between;
+}
+.carro-food-title{
+    font-size: 14px;
+    font-weight: 500;
+}
+.carro-precio{
+    font-weight: 600;
+}
+.carro-amt{
+    font-weight: 600;
+}
+.carro-cantidad{
+    background-color: #CDA45E;
+    color: #292929;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.carro-remove{
+    font-size: 25px;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.total-title{
+    font-size: 15px;
+    font-weight: 500;
+}
+.total-precio{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.carro .btn-comprar{
+    padding: 15px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    border: 2px solid #CDA45E;
+    color: #CDA45E;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.carro .btn-comprar:hover{
+    color: #292929;
+    background: #CDA45E;
+}
+#carro-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* -------- Seccion de Comida--------- */
+.Contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px;
+    border: 2px solid #CDA45E;
+}
+.Contenido .Seccion-comida{
+    height: 280px;
+    width: 240px;
+    margin: 30px;
+    background: rgba(0,0,0,0.6);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 2px solid #CDA45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Contenido .Seccion-comida img{
+    height: 130px;
+    width: 130px;
+    background: #292929;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.Contenido .Seccion-comida h2{
+    color: #CDA45E;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.Contenido .Seccion-comida h3{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.Contenido .Seccion-comida .add-Carro{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #CDA45E;
+    outline: 0;
+    background-color: transparent;
+    color: #CDA45E;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.Contenido .Seccion-comida .add-Carro:hover{
+    color: #292929;
+    background-color: #CDA45E;
+}
+
+/* Menu*/
+section.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 50%;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    z-index: 999;
+}
+
+.wrap-logo-header {
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+.wrap-logo-header span {
+    transition: 0.75s;
+}
+
+.wrap-logo-header span:hover {
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.logo-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-wrap-header {
+    display: flex;
+    flex-basis: 50%;
+}
+
+ul.main-menu {
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+ul.main-menu #nav-main-contact {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: orange;
+    color: white;
+}
+
+li.menu-item {
+    margin: .75rem;
+    display: flex;
+}
+
+li.menu-item a {
+    padding: .5rem 1rem;
+    color: white;
+}
+
+li.menu-item a:hover {
+    color: orange;
+
+}
+
+i.toggle-menu {
+    display: none;
+    background-color: #fff;
+    border: none;
+    z-index: 9999;
+}
+
+i.toggle-menu img {
+    width: 27px;
+    z-index: 99;
+}
+
+input#check {
+    display: none;
+}
+
+@media (min-width:880px) {
+    .header-wrap {
+        padding: .5rem 5rem;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        margin-bottom: 4rem;
+    }
+
+    .header-wrap {
+        position: fixed;
+        width: 100%;
+        background-color: black;
+        padding: 0;
+        top: 0;
+        z-index: 9999;
+        height: 60px;
+    }
+
+    .wrap-logo-header {
+        position: fixed;
+        z-index: 999;
+        top: 3%;
+        left: 3%;
+    }
+
+    i.toggle-menu {
+        display: flex;
+    }
+
+    ul.main-menu,
+    #nav-main-contact {
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.main-menu {
+        position: fixed;
+        background-color: black;
+    }
+
+    label.checkbtn {
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 2rem;
+    }
+}
